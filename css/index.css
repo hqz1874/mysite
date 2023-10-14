@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background: white;
+    /* background-image: linear-gradient(to right, #62221B 0%, #c94f13 10%, #FEA64C 50% ,#FECF91 75% , #C4ECE8 100% ); */
+    }
+
+
+/* 菜单栏设置 */
+
+
+.nav{
+    background: #cfd9df;
+    width: 1000px;
+    height: 60px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-shadow: 5px 5px 2px #868f96;
+    margin: 25px auto;
+    /* 弹性布局设置 */
+    display: flex;
+    /* 水平方向均匀分布 */
+    justify-content: space-around;
+    /* 垂直方向居中 */
+    align-items: center;
+}
+
+/* 一级菜单里每个项目的设置 */
+
+.navitem{
+    width: 140px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(142, 139, 139);
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    position: relative; 
+}
+
+/* 当一级项目被选中时，背景颜色的改变 */
+
+.navitem:hover{
+    background: skyblue 50%;
+}
+
+/* 一级项目的链接文字默认的设置 */
+
+.navitem a:active,a:visited{
+    color: black;
+}
+
+/* 当一级项目被选中时， 链接颜色的改变 */
+.navitem a:hover{
+    color: aliceblue;
+}
+
+
+.nav2{
+    width: 140px;
+    background: transparent;
+    margin-top: 0px;
+    position: absolute;
+    display: none;
+
+}
+.navitem:hover .nav2{
+    display: block;
+    transition-delay: 1s ;
+}
+
+
+.nav2item{
+    width: 140px;
+    height: 40px;
+    border: 4px solid white;
+    border-radius: 30px;
+    background: #cfd9df;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #868f96;
+    position: relative;
+    margin: 5px auto;
+}
+
+.nav2item:hover{
+    background: skyblue;
+}
+
+
+
+.imgcontainer{
+    width: 1200px;
+    height: 500px;
+    background: #cfd9df;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 4px #868f96;
+}
+
+.imgposter{
+    width: 1160px;
+    height: 460px;
+    border-radius: 20px;
+    margin:  auto auto;
+
+}
+
+.mainbox{
+    width: 1200px;
+    height: 1000px;
+    background: pink;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px #868f96;
+}
+
+.content{
+    background: skyblue;
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px #868f96;
+    
+}
