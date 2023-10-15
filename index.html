@@ -89,8 +89,25 @@
         </div>
     </div>
 
-    <div class="imgcontainer">
-        <img src="./img/hometest.jpg" alt="" class="imgposter">
+    <div class="box">
+        <div class="imglist">
+            <a href="" class="showimg">
+                <img src="./img/slide1.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="./img/slide2.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="./img/slide3.jpg" alt="">
+            </a>
+        </div>
+        <span class="leftbtn">&lt;</span>
+        <span class="rightbtn">&gt;</span>
+        <div class="button-right">
+            <span class="checked"></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 
     <div class="mainbox">
@@ -165,5 +182,45 @@
             </ul>
         </div>
     </div>
+    <script>
+        window.onload=function(){
+            var imglist = document.querySelectorAll(".imglist>a");
+            var btnlist = document.querySelectorAll(".box>.btn>span");
+            var lbtn = document.querySelector(".leftbtn");
+            var rbtn = document.querySelector(".rightbtn");
+            var time = 3000;
+            var dingshiqi;
+            start();
+            function start(){
+                dingshiqi = setInterval(function (){
+                    index ==imglist.length - 1 ? index=0 : index++;
+                    switchPubic();
+                },time)
+            }
+            function switchPubic(){
+                for (var i=0;i<imglist.length;i++){
+                    imglist[i].classList.remove('showimg')
+                    btnlist[i].classList.remove('checked')
+
+                }
+                imglist[index].classList.add('showimg')
+                btnlist[index].classList.add('checked')
+            }
+            lbtn.onclick=function(){
+                clearInterval(dingshiqi)
+                index==0 ? index = imglist.length -1 : index--;
+                switchPubic();
+                start();
+            }
+            rbtn.onclick=function(){
+                clearInterval(dingshiqi)
+                index == imglist.length -1 ? index=0 : index++;
+                switchPubic();
+                start();
+            }
+               
+        }
+    </script>
 </body>
+
 </html>
