@@ -26,7 +26,7 @@ body{
     border: 1px solid transparent;
     border-radius: 50px;
     box-shadow: 5px 5px 2px #868f96;
-    margin: 25px auto;
+    margin: 100px auto;
     
     /* 设置弹性布局 */
     display: flex;
@@ -110,6 +110,12 @@ body{
     margin: 0 auto;
     display: flex;
     background-color: aquamarine;
+}
+.imgbox img{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+
 }
 
 
