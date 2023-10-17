@@ -5,7 +5,12 @@
     box-sizing: border-box;
 }
 
+/* 适用于site1.0 */
 
+@font-face {
+    font-family: 'navfont';
+    src: url(./font/演示夏行楷.ttf);
+    }
 
 
 body{
