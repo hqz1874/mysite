@@ -8,15 +8,16 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div class="all-box">
+    <div class="all-box-am" id="all-box">
+
         <div class="left"></div>
         <div class="main">
             <ul class="nav">
-                <li class="active"><span class="zi">主页</span><i class="iconfont icon-shouye"></i></li>
+                <li><span class="zi">主页</span><i class="iconfont icon-shouye"></i></li>
                 <li><span class="zi">我的作品</span><i class="iconfont icon-xiaosuolvetu"></i></li>
                 <li><span class="zi">我的生活</span><i class="iconfont icon-tuwenxiangqing"></i></li>
                 <li><span class="zi">游戏世界</span><i class="iconfont icon-iconfontyouxihudong"></i></li>
-                <li><span class="zi">关于本站</span><i class="iconfont icon-shejishi"></i></li>
+                <li class="active"><span class="zi">关于本站</span><i class="iconfont icon-shejishi"></i></li>
             </ul>
             <ul class="content">
                 <li>
@@ -24,47 +25,46 @@
                        
                     </div>
                 </li>
+                <li>
+                    <div id="aps">
+                        
+                    </div>
+                </li>
+                <li>
+                    <div>
+                       
+                    </div>
+                </li>
+                <li>
+                    <div>
+                       
+                    </div>
+                </li>
                 <li class="active">
                     <div>
-
+                        <div></div>
+                        <div></div>
                     </div>
-                </li>
-                <li>
                     <div>
-                       
-                    </div>
-                </li>
-                <li>
-                    <div>
-                       
-                    </div>
-                </li>
-                <li>
-                    <div>
-                       
+                        <div></div>
+                        <div></div>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <div class="an-box">
+                <button class="AnNiu">夜间</button>
+                <button class="AnNiu2">正常</button>
+            </div>
+        </div>
     </div>
+    <script src="./js/home.js">
+    </script>
     <script>
-    var menuitems = document.querySelectorAll(".nav li")
-    var boxes = document.querySelectorAll(".content>li")
 
-    for(var i=0 ; i < menuitems.length ;i++){
-        menuitems[i].dataset.index = i
-        menuitems[i].onclick = function(){
-            var index = this.dataset.index
-            for(var m=0 ; m < menuitems.length ; m++){
-                menuitems[m].classList.remove("active")
-                boxes[m].classList.remove("active")
-            }
-            menuitems[index].classList.add("active")
-            boxes[index].classList.add("active")
-        }
-    }
-</script>
+    </script>
+
 </body>
 
 </html>

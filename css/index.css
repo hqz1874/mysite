@@ -10,16 +10,27 @@
     text-align: center;
 }
 
-
-.all-box{
+/* 总容器 */
+/* 里面从左到右分为三部分：  'left'    'main'     'right'     */
+.all-box-am{
     width: 100%;
     height: 100vh;
-    background-color: white;
     display: flex;
     background-image: linear-gradient(to top,#f9fbff,#dfdade 30%,#ebd9d7 75%);
 }
+.all-box-pm{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: black
+}
+
+
 .left,.right{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main{
     width: 70%;
@@ -81,11 +92,12 @@
     border-radius: 5px;
     background-color: #d8b08c;
     box-shadow: 2px 2px 4px silver;
+    justify-content: space-around;
 }
-.content div{
-    background-color: #dfdade;
+.content li:nth-child(5) div{
+    background-color: #872b75;
     margin: 20px;
-    width: 100%;
+    width: 40%;
     border-radius: 10px;
     border: 4px solid white;
 }
@@ -99,3 +111,30 @@ i{
     display: block;
     font-size: 22px;
 }
+.an-box{
+    margin-top: 10px;
+    width: 130px;
+    height: 50px;
+    background: aliceblue ;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px ;
+}
+.AnNiu{
+    background-color: #d8b08c;
+    width: 50px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.AnNiu2{
+    background-color: #d8b08c;
+    width: 50px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+
