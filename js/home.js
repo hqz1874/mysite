@@ -1,4 +1,4 @@
-
+// 菜单栏选页卡
 var menuitems = document.querySelectorAll(".nav li")
 var boxes = document.querySelectorAll(".content>li")
 
@@ -15,7 +15,7 @@ for(var i=0 ; i < menuitems.length ;i++){
         }
      }
 
-
+// 背景设置
 var btn1 = document.querySelector(".AnNiu")
 var btn2 = document.querySelector(".AnNiu2")
 var all_box = document.querySelector("#all-box")
